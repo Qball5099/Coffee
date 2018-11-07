@@ -34,7 +34,7 @@ public class MorningRushTester
                     System.out.println(gulps);
                 }
 
-                else if(gulps == 0)
+                if(gulps == 0)
                 {
                     System.out.println("Go to school");
                     JOptionPane.showMessageDialog(null, "Make another?");
@@ -49,7 +49,8 @@ public class MorningRushTester
         Timer t = new Timer(DELAY, dc);
         t.start();
         
-        JOptionPane.showMessageDialog(null, "Make another?");
+        JOptionPane.showMessageDialog(null, "Just about to go to school");
+        System.out.println("Just about to go to school");
         System.exit(0);
     }
 }
