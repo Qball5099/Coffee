@@ -14,7 +14,9 @@ public class MorningRushTester
 
     public static void main(String[] args)
     {
-
+        
+        final int intialGulps = 5;
+        
         class DrinkCoffee implements ActionListener
         {
 
@@ -30,13 +32,15 @@ public class MorningRushTester
                 if(gulps > 0)
                 {
                     System.out.println(gulps);
-                    --gulps;
                 }
 
-                if(gulps == 0)
+                else if(gulps == 0)
                 {
                     System.out.println("Go to school");
+                    JOptionPane.showMessageDialog(null, "Make another?");
+                    gulps = intialGulps;
                 }
+                --gulps;
             }
 
         }
